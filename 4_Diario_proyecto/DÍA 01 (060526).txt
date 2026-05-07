@@ -19,3 +19,28 @@ RAM size: 8MB
 QSPI size: 16 MB
 Has Video output: Yes
 Has Crypto chip: Yes
+
+
+
+
+Documentación para poder conectar la portenta H7 con Edge Impulse para tomar fotos:
+
+https://docs.edgeimpulse.com/hardware/boards/arduino-portenta-h7
+
+	-> Ahí se explica que hay que instalar varias cosas para que esto funcione.
+		
+		-> Edge Impulse CLI: https://docs.edgeimpulse.com/tools/clis/edge-impulse-cli/installation
+			-> A su vez, para esta instalación hay que tener instalados Python 3 y node.js
+				-> https://www.python.org/downloads/release/pymanager-261/ (A través de MS Store)
+				-> https://nodejs.org/en/
+
+		-> Arduino CLI: -> https://arduino.github.io/arduino-cli/1.4/
+				-> https://www.youtube.com/watch?v=1jMWsFER-Bc ("Installing Arduino CLI on Windows 10") //No es necesario el tutorial porque explicaba .exe y yo hice .msi
+
+		-> También es necesario actualizar el firmware de la placa antes de poder conectarla. https://docs.edgeimpulse.com/hardware/boards/arduino-portenta-h7 (el mismo enlace)
+			-> Vídeo explicativo: https://www.youtube.com/watch?v=9eyygfjGLLQ&t=15s ("Connecting Arduino Portenta H7 to Edge Impulse")
+
+
+Una vez se ha configurado lo anterior podemos conectar la cámara usando el Daemon de Edge Impulse a nuestro proyecto.
+	Para ello, hay que ejecutar este comando desde CMD (administrador) con la placa conectada por USB: edge-impulse-daemon (ó edge-impulse-daemon  --clean)
+	--> Tuve problemas con la conexión porque mi cuenta de EdgeImpulse no tenía contraseña y esto provocaba conflictos.
