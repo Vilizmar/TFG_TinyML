@@ -42,5 +42,5 @@ https://docs.edgeimpulse.com/hardware/boards/arduino-portenta-h7
 
 
 Una vez se ha configurado lo anterior podemos conectar la cámara usando el Daemon de Edge Impulse a nuestro proyecto.
-	Para ello, hay que ejecutar este comando desde CMD (administrador) con la placa conectada por USB: edge-impulse-daemon (ó edge-impulse-daemon  --clean)
+	Para ello, hay que ejecutar este comando desde CMD (administrador) con la placa conectada por USB: edge-impulse-daemon (ó edge-impulse-daemon --clean)
 	--> Tuve problemas con la conexión porque mi cuenta de EdgeImpulse no tenía contraseña y esto provocaba conflictos.

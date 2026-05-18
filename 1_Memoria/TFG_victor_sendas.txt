@@ -1,4 +1,4 @@
-NODO DE VISIÓN TINYML DE BAJA RESOLUCIÓN PARA MONITORIZACIÓN SEMÁNTICA DE SENDAS Y USO DEL TERRENO
+	NODO DE VISIÓN TINYML DE BAJA RESOLUCIÓN PARA MONITORIZACIÓN SEMÁNTICA DE SENDAS Y USO DEL TERRENO
 
 1. Descripción general
 Nodo con cámara de baja resolución orientado a monitorizar sendas, caminos rurales y pequeños claros en entorno natural.

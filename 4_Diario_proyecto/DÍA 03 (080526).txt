@@ -1,0 +1,33 @@
+DÍA 03 (08/05/26):
+
+
+PLANNING: Crear un dataset de "juguete" con el que la cámara pueda detectar si las imágenes son: (un fondo en blanco, un boli, un ratón, ratón y boli).
+
+	-> Avanzar Memoria explicando flujo de trabajo de Edge Impulse
+	-> Explicar diferencias y aplicaciones entre modelos FOMO y YOLO (o la otra que no me acuerdo)
+	-> Probar Live Classification con la cámara de la Portenta H7 en Edge Impulse
+
+	-> También me gustaría empezar con las comunicaciones MQTT con este modelo anterior para ir viendo como se hace. //No pudo ser
+	
+
+
+
+REALIZACIÓN:
+
+	- Dataset de juguete creado con imágenes de una mesa vacía, un boli, un ratón y un ratón con boli. Usando object detection se realizará el etiquetado. 100 imágenes Training / 24 Testing.
+
+	- Etiquetado de todas las imágenes, impulso creado, parámetros de las imágenes definido y características definidas.
+
+	- Entrenado el dataset con todo lo anterior en Object Detection -> F1 Score de 93,4% (Sospecho que no es más alto al haber superpuesto ratón y boli en algunas imágenes).
+
+	- Al testear el modelo con las imágenes de test se obtiene una precisión del 88.89%. No está mal. Errores de precisión sobre todo en ratón y boli juntos y sorprendentemente
+boli por separado. (Algunos errores de boli ocurren porque la mitad del bolígrafo no aparecía en la imagen, en otros casos inexplicable).
+
+
+
+PROXIMAMENTE:
+
+Rellenar la memoria con toda la información pertinente (desparramada). Con la diferencia de FOMO y YOLO y cual va mejor con la placa y el proyecto que tenemos entre manos. También se pueden comentar las formas de funcionamiento de Edge Impulse (Object Detection, Image). En la pestaña de Create Impulse también se pueden explicar los diferentes modos de funcionamiento de "Add a processing Block" y de "Add a Learning Block".
+
+
+(El objetivo no es escribir 100 páginas pulidas, es escribir 300 páginas llenas de morralla y luego sintetizarlas en 100 contando lo más importante).

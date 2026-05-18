@@ -1,0 +1,9 @@
+DÍA 05 (15/05/26):
+
+
+Hoy he descargado Mosquitto (MQTT) para poder recibir los datos que lea el sensor en las sendas. También se ha tenido que descargar la librería PubSubClient de Nick O'Leary para que el programa de detección de Arduino (creado desde Edge Impulse) pueda enviar los datos (JSON) al suscriptor del tema (mosquitto).
+
+En primera instancia probaremos con comunicación Wi-Fi puesto que parece ser la más guiada (y la antena de la portenta es Wifi).
+
+Estoy haciendo el cursillo introductorio de mqtt para recordar el funcionamiento de esta herramienta --> https://mqtt-academy.cedalo.com/topics/mqtt-pub-sub-model-in-detail/
+
