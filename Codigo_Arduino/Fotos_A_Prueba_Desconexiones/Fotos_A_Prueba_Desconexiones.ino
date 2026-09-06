@@ -49,7 +49,7 @@ void setup(){
         Serial.println("Unable to find the camera");
     }
     
-    // Iniciamos el Watchdog con un límite de 10 segundos (10000 ms)
+    // Iniciamos el Watchdog con un límite de 10 segundos
     mbed::Watchdog &watchdog = mbed::Watchdog::get_instance();
     watchdog.start(10000); 
     

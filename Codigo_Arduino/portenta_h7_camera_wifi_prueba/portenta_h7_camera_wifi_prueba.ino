@@ -131,7 +131,7 @@ void reconnectMQTT() {
     
     // Usamos un ID de cliente fijo por seguridad
     if (mqttClient.connect("PortentaTFG_Nodo1_Test")) {
-      ei_printf("¡Conectado al Broker MQTT!\n");
+      ei_printf("Conectado al Broker MQTT\n");
     } else {
       ei_printf("Fallo, rc=");
       Serial.print(mqttClient.state());
@@ -165,7 +165,7 @@ void setup()
     // Inicializamos la cámara justo después puesto que es lo que necesita más memoria contigua
     ei_printf("Iniciando sensor Vision Shield...\n");
     if (ei_camera_init() == false) {
-        ei_printf("ERR: Fallo al inicializar la cámara!\r\n");
+        ei_printf("ERR: Fallo al inicializar la cámara\r\n");
         return; 
     } else {
         ei_printf("Cámara inicializada correctamente.\r\n");
@@ -195,7 +195,7 @@ void setup()
 
     while (!mqttClient.connected() && (millis() - startAttemptTime < timeout)) {
         if (mqttClient.connect("PortentaTFG_Nodo1_Test")) {
-            ei_printf("¡Conectado a HiveMQ con éxito!\n");
+            ei_printf("Conectado a HiveMQ con éxito\n");
         } else {
             delay(500);
             ei_printf("*");
